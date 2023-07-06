@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@100&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  </head>
+    <body>
+      <nav>
+        <div class="menu-icon">
+           <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+ <a href="menu.html">
+<span class="graff-logo">
+{ </span>WORLDGEEK <span  class="graff-logo">}</span> 
+ </a>
+        </div>
+        <div class="nav-items">
+           <li><a href="menu.html">MENU</a></li>
+           <li><a href="Aboutme.html">ABOUT ME</a></li>
+           <li><a href="blog.html">BLOG</a></li>
+           <li><a href="books.html">BOOKS</a></li>
+           <li><a href="another.html">ANOTHER RESOURCES</a></li>
+        </div>
+        <img src="images/moon.png" id="icon">
+        <div class="search-icon">
+           <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+           <span class="fas fa-times"></span>
+        </div>
+        <form action="#">
+           <input type="search" class="search-data" placeholder="Search" required>
+           <button type="submit" class="fas fa-search"></button>
+        </form>
+     </nav>
+     </div>
+     <script>
+        const menuBtn = document.querySelector(".menu-icon span");
+        const searchBtn = document.querySelector(".search-icon");
+        const cancelBtn = document.querySelector(".cancel-icon");
+        const items = document.querySelector(".nav-items");
+        const form = document.querySelector("form");
+        menuBtn.onclick = ()=>{
+          items.classList.add("active");
+          menuBtn.classList.add("hide");
+          searchBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = ()=>{
+          items.classList.remove("active");
+          menuBtn.classList.remove("hide");
+          searchBtn.classList.remove("hide");
+          cancelBtn.classList.remove("show");
+          form.classList.remove("active");
+          cancelBtn.style.color = "#ff3d00";
+        }
+        searchBtn.onclick = ()=>{
+          form.classList.add("active");
+          searchBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+        }
+     </script>
+  
+  <section class="section-1">
+  
+    <div>
+    <h1 class="title">BLACK HOLE</h1>
+  </div>
+
+  <div>
+  <p class="text-principal">
+
+  </p>
+</div>
+      <div>
+        <h1 class="title">Title</h1>
+      </div>
+      <div>
+      <p class="text-principal"> 
+        write somethings
+      </p>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2023 WorldGeek. All rights reserved.</p>
+  </footer>
+  <script>
+    var icon= document.getElementById("icon");
+    icon.onclick= function(){
+      document.body.classList.toggle("dark-theme");
+      if(document.body.classList.contains("dark-theme")){
+        icon.src="images/sun.png"
+      }else{
+        icon.src="images/moon.png";
+      }
+    }
+  </script>
+  
+  </body>
+  </html>

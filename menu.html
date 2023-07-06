@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+  <body>
+    <nav>
+      <div class="menu-icon">
+         <span class="fas fa-bars"></span>
+      </div>
+      <div class="logo">
+<a href="menu.html">
+<span class="graff-logo">
+{</span>WORLDGEEK<span class="graff-logo">}</span> 
+</a>
+      </div>
+      <div class="nav-items">
+         <li><a href="menu.html">MENU</a></li>
+         <li><a href="Aboutme.html">ABOUT ME</a></li>
+         <li><a href="blog.html">BLOG</a></li>
+         <li><a href="books.html">BOOKS</a></li>
+         <li><a href="another.html">ANOTHER RESOURCES</a></li>
+      </div>
+      <img src="images/moon.png" id="icon">
+      <div class="search-icon">
+         <span class="fas fa-search"></span>
+      </div>
+      <div class="cancel-icon">
+         <span class="fas fa-times"></span>
+      </div>
+      <form action="#">
+         <input type="search" class="search-data" placeholder="Search" required>
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+   </nav>
+   </div>
+   <script>
+      const menuBtn = document.querySelector(".menu-icon span");
+      const searchBtn = document.querySelector(".search-icon");
+      const cancelBtn = document.querySelector(".cancel-icon");
+      const items = document.querySelector(".nav-items");
+      const form = document.querySelector("form");
+      menuBtn.onclick = ()=>{
+        items.classList.add("active");
+        menuBtn.classList.add("hide");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+      }
+      cancelBtn.onclick = ()=>{
+        items.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        searchBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        form.classList.remove("active");
+        cancelBtn.style.color = "#ff3d00";
+      }
+      searchBtn.onclick = ()=>{
+        form.classList.add("active");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+      }
+   </script>
+<section class="section-1">
+  <div>
+  <h1 class="title">Welcome in this blog!</h1>
+</div>
+  <div>
+    <p class="text-principal"> HI Geek!. <br>
+I'm Mike, I create this blog for talking with other people about the World of Geek.
+I make it, for people who want discover this world, but even for people who are more geek than me :) <br> <br>
+I will talk of differents topics that I'm very fond with them. among which
+<strong style="color:rgb(186, 4, 4);">Math</strong>
+<p class="text-principal">
+because since I was child I love numbers and logic, even
+<strong style="color:rgb(186, 4, 4);">Science</strong>, I like astrophysics, 
+in fact, in WORLDGEEK you can find an article about <a style="text-decoration: underline; color: #333;" href="black holes">Black Holes</a>.
+here, there is even an article about computer's building, 
+because I very like <strong style="color:rgb(186, 4, 4);">Tech</strong>. In my blog I talk about 
+the main news of Science and Technology. 
+Here, you will find detailed explanation of <strong style="color:rgb(186, 4, 4);">Comics</strong> 
+and of<strong style="color:rgb(186, 4, 4);"> Design</strong>, for example, i will write an article of my edc,
+because I am very passionate about the mountains in fact, I have a lot of knife and stranger tools.
+    </p>
+    </div>
+    <div style="margin-top: 10%;">
+      <h1 class="title">But, Who's a Geek?</h1>
+    </div>
+<div>
+    <p class="text-principal" style="display: inline-block; padding-left: 5%; padding-right: 5%;"> 
+      A geek is a person who is highly knowledgeable and enthusiastic about a particular subject,
+       often a technical one,
+        such as computers, programming, technology, science fiction, fantasy, comics, gaming,
+        and so on. Geeks often have a deep passion for the subjects they are interested in,
+         and they enjoy spending time exploring and learning new things about them.
+    </p>
+  </div>
+  <div>
+ <img style="max-width: 90%;margin: auto;"class="image-1" src="images/Progetto senza titolo (2).png">
+</div>
+<div>
+  <hr style="height: 10px; color: #333; background-color: #333; margin-top:10% ;margin-bottom:10% ;">
+</div>
+<div>
+  <h1 class="title" style="font-size: 60px;">LAST ARTICLES</h1>
+</div>
+<div class="grid-articles">
+<div class="last-articles">
+<div class="div-title-article">
+  <p class="title-article">BLACK HOLE</p>
+</div>
+<div class="img-blackhole-div">
+<img class="img-blackhole-1" src="images/blackhole-article.jpg">
+</div>
+<div>
+  <p class="introduction-articles">a clarity and simple introduction about the fascinating world of Black Holes</p>
+</div>
+<div style="text-align: center;">
+  <a href="black-hole.html">
+<button class="read-button" link="Articoli/blackhole.html">
+  Read
+</button>
+</a>
+</div>
+</div>
+<div class="last-articles">
+  <div style="text-align: center;">
+    <p class="title-article">CHATGPT</p>
+  </div>
+  <div class="img-blackhole-div">
+  <img class="img-blackhole-1" src="images/CHAT-GPT.jpg">
+  </div>
+  <div>
+    <p class="introduction-articles">ChatGPT will conquer the world?<br>what are problems?<br>what are good things?</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="Articoli/blackhole.html">
+  <button class="read-button" link="Articoli/blackhole.html">
+    Read
+  </button>
+  </a>
+  </div>
+  </div>
+  <div class="last-articles">
+    <div style="text-align: center;">
+      <p class="title-article">BUILD A COMPUTER</p>
+    </div>
+    <div class="img-blackhole-div">
+    <img class="img-blackhole-1" src="images/Building-Pc.jpg">
+    </div>
+    <div>
+      <p class="introduction-articles">a clarity and simple introduction about the Computers' building</p>
+    </div>
+    <div style="text-align: center;">
+      <a href="Articoli/blackhole.html">
+    <button class="read-button" link="Articoli/blackhole.html">
+      Read
+    </button>
+    </a>
+    </div>
+    </div>
+    <div class="last-articles">
+      <div style="text-align: center;">
+        <p class="title-article">GUIDE BUY IPHONE</p>
+      </div>
+      <div class="img-blackhole-div">
+      <img class="img-blackhole-1" src="images/Apple-iPhone-history-the-evolution-of-the-smartphone-that-started-it-all.jpeg">
+      </div>
+      <div>
+        <p class="introduction-articles">a clarity and simple introduction about the fascinating world of Black Holes</p>
+      </div>
+      <div style="text-align: center;">
+        <a href="Articoli/blackhole.html">
+      <button class="read-button" link="Articoli/blackhole.html">
+        Read
+      </button>
+      </a>
+      </div>
+      </div>
+   <div class="last-articles">
+        <div style="text-align: center;">
+          <p class="title-article">META</p>
+        </div>
+        <div class="img-blackhole-div">
+        <img class="img-blackhole-1" src="images/Zuck.jpg">
+        </div>
+        <div>
+          <p class="introduction-articles">
+            let's talk about Meta. where is going and if it will be successful.
+          </p>
+        </div>
+        <div style="text-align: center;">
+          <a href="Articoli/blackhole.html">
+        <button class="read-button" link="Articoli/blackhole.html">
+          Read
+        </button>
+        </a>
+        </div>
+        </div>
+        <div class="last-articles">
+          <div style="text-align: center;">
+            <p class="title-article">Elon Musk</p>
+          </div>
+          <div class="img-blackhole-div">
+          <img class="img-blackhole-1" src="images/Musk.jpg">
+          </div>
+          <div>
+            <p class="introduction-articles">Elon musk is a genius?<br>
+              can he destroy the world?<br>
+              let's talk about it!
+            </p>
+          </div>
+          <div style="text-align: center;">
+            <a href="Articoli/blackhole.html">
+          <button class="read-button" link="Articoli/blackhole.html">
+            Read
+          </button>
+          </a>
+          </div>
+          </div>
+        </div>
+        <hr style="height: 10px; color: #333; background-color: #333; margin-top:10% ;margin-bottom:10% ; ">
+</section>
+
+
+<script>
+  var icon= document.getElementById("icon");
+  icon.onclick= function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+      icon.src="images/sun.png"
+    }else{
+      icon.src="images/moon.png";
+    }
+  }
+</script>
+<footer>
+  <p>&copy; 2023 WorldGeek. All rights reserved.</p>
+</footer>
+</body>
+</html>
